@@ -1,6 +1,7 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
+import { SiScaleracademy } from "../data/SiScaleracademy";
 
 function HeroSection() {
   return (
@@ -47,12 +48,13 @@ function HeroSection() {
             <FaLinkedin />
           </a>
           <a
-            href="https://leetcode.com/u/dk/"
+            href="https://www.scaler.com/academy/profile/0b358c8f3b72/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-green-400 text-3xl transition-colors flex items-center"
           >
-            <SiLeetcode />
+            {/*<SiLeetcode />*/}
+            <SiScaleracademy size={36}/> 
           </a>
         </div>
       </div>
