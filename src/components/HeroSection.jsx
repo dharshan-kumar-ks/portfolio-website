@@ -58,7 +58,7 @@ function HeroSection() {
       </div>
       <div className="md:w-1/2 flex justify-center">
         <img
-          src="dharshan_image.jpg"
+          src="dharshan_image_professional-green.jpeg"
           alt="Dharshan Kumar"
           className="w-80 h-80 rounded-full border-4 border-green-400"
         />
