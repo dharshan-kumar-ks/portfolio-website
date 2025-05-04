@@ -10,37 +10,51 @@ function ProjectsSection() {
       details: [
         "Built admin dashboards to manage residents, tickets, and announcements, improving operational efficiency.",
         "Developed RESTful APIs with Spring Boot, built a responsive ReactJS frontend integrated with MySQL, and deployed the full-stack platform on Vercel and Render following CI/CD best practices.",
-        "Implemented JWT-based authentication and hashed passwords using Bcrypt, enhancing security.", 
+        "Implemented JWT-based authentication and hashed passwords using Bcrypt, enhancing security.",
         "WebSocket-based real-time chat (STOMP over SockJS) for seamless ticket resolution between admin and residents.",
         "Integrated Razorpay API for payment processing simulation.",
       ],
-      tools: "Java, Spring Boot, mySQL, JPA, JWT, Bcrypt",
+      tools: "Java, Spring Boot, mySQL, React, Websockets, JWT, Bcrypt",
       github: "https://github.com/dharshan-kumar-ks/PGBuddy",
     },
     {
-      title: "Multicast Analyser ",
+      title: "Multicast Analyser",
       description:
-        "Collaborated with a team of 4 engineers to design and implement a web app that enables users to simulate and visualize multicast traffic using Python, enhancing network troubleshooting efficiency by 20% for support engineers.",
+        "Collaborated with a team of 4 to develop a microservices-based web application using Java (Spring Boot) and React, enabling users to simulate and visualize multicast traffic which reduced lab replications by 20%, saving ~360 lab switch hours monthly.",
       details: [
-        "Developed a pipeline to collect tech-support text files and display potential issues in the multicast setup.",
-        "Created custom parsers using regex to extract information from command outputs.",
-        "Utilized NetworkX and Bokeh libraries to visualize graph data effectively.",
-        "Tested software for bugs and performance, resolving issues and improving efficiency by 18%.",
+        "Built a backend pipeline to ingest tech-support files (via manual upload or Salesforce API), processing 500+ files using custom regex parsers to extract key network insights.",
+        "Implemented backend logic for 20+ automated troubleshooting checks to detect misconfigurations, and exposed APIs to display multicast traffic visualizations in the React.js frontend.",
+        "Developed JWT-based authentication to enforce role-based access for 400+ TAC users and deployed the platform on GCP with 99.9% uptime.",
       ],
-      tools: "Node.js, Express.js, React.js, JavaScript, MongoDB, AWS S3, JWT",
-      github: "https://github.com/dharshan-kumar-ks/devnet-bootcamps",
+      tools: "Java, Spring Boot, mySQL, JWT, GCP",
+      github: null,
     },
     {
-      title: "SONY - AgroESP",
+      title: "Electrical substation detection using satellite images",
       description:
-        "Developed a web application for an Edge-based Cyber-Physical Polyhouse, funded by Sony Semiconductor Solutions.",
+        "Developed a deep learning model to accurately detect electrical substations of varying shapes and surroundings from satellite imagery with a 97% accuracy and 0.68 Intersection over Union (IoU)  securing 9th rank (out of 72) in a competition conducted by ISRO in July, 2021",
       details: [
-        "Designed a React.js front-end to display real-time IoT sensor data.",
-        "Constructed a Node.js-based REST API to manage IoT data, improving system efficiency by 30%.",
-        "Integrated MQTT-based messaging for low-latency communication, reducing response time by 25%.",
+        "Applied SegNet architecture for semantic image segmentation, and enhanced it by replacing the encoder with deeper VGG-16 and VGG-19 models for improved feature extraction.",
+        "Implemented data augmentation techniques to expand the training set by 500+ images which diversified visual conditions in satellite images, boosting accuracy to 90%.",
+        "Leveraged transfer learning with pre-trained weights to further raise model performance to 95%.",
+        "Employed Stochastic Gradient Descent (SGD) optimizer and used Mean Squared Error (MSE) as the loss function.",
       ],
-      tools: "Node.js, Express.js, React.js, MySQL, Rabbit MQTT",
-      github: null,
+      tools: "Python, TensorFlow, OpenCV, SegNet, VGG-19",
+      github: "https://github.com/dharshan-kumar-ks/electrical_substation_detection",
+    },
+    {
+      title: "Food Hub App",
+      description:
+        "Developed an Android-based food ordering application that allows users to discover restaurants, place food orders, mark favorites, and manage order history seamlessly.",
+      details: [
+        "Designed an intuitive front-end using XML layouts and implemented backend logic in Kotlin.",
+        "Integrated third-party APIs to fetch restaurant and menu data in JSON format and store it locally using ROOM persistence library with a SQL relational database.",
+        "Utilized Volley for efficient network operations to fetch text-based JSON data and Picasso for dynamic image loading from URLs.",
+        "Applied Google Android Material Components to enhance UI design and maintain modern design standards.",
+        "Integrated Makeramen library to apply custom image styles and improve visual aesthetics.",
+      ],
+      tools: "Kotlin, ROOM, Volley, Picasso, Android Material Components",
+      github: "https://github.com/dharshan-kumar-ks/Food_Hub_App",
     },
   ];
 

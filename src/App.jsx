@@ -5,6 +5,8 @@ import AboutSection from "./components/AboutSection";
 import ExperienceSection from "./components/ExperienceSection";
 import SkillsSection from "./components/SkillsSection";
 import ProjectsSection from "./components/ProjectsSection";
+import AchievementsSection from "./components/AchievementsSection";
+import EducationSection from "./components/EducationSection"; 
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer"; // Import Footer
 
@@ -13,6 +15,7 @@ import emailjs from "emailjs-com"; // Import EmailJS
 function App() {
   const [activeSection, setActiveSection] = useState("");
   const [expandedExperience, setExpandedExperience] = useState(null);
+  const [expandedEducation, setExpandedEducation] = useState(null); // State for expanded education
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State for toggling the menu
 
   const toggleMenu = () => {
@@ -27,6 +30,8 @@ function App() {
         "experience",
         "skills",
         "projects",
+        "publications", 
+        "education",
         "contact",
       ];
       const scrollPosition = window.scrollY + 200; // Adjust for navbar height
@@ -57,6 +62,9 @@ function App() {
 
   const toggleExperience = (id) => {
     setExpandedExperience(expandedExperience === id ? null : id);
+  };
+  const toggleEducation = (id) => {
+    setExpandedEducation(expandedEducation === id ? null : id);
   };
 
   const sendEmail = (e) => {
@@ -96,6 +104,11 @@ function App() {
         />
         <SkillsSection />
         <ProjectsSection />
+        <AchievementsSection /> 
+        <EducationSection 
+          expandedEducation={expandedEducation}
+          toggleEducation={toggleEducation}
+        /> 
         <ContactSection sendEmail={sendEmail} />
       </div>
       <Footer /> {/* Add Footer */}

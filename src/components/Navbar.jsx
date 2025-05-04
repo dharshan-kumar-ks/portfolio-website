@@ -20,7 +20,7 @@ function Navbar({ activeSection, handleNavClick, isMenuOpen, toggleMenu }) {
             isMenuOpen ? "block" : "hidden"
           } md:flex space-x-6 absolute md:static top-16 left-0 w-full md:w-auto bg-gray-900 md:bg-transparent md:space-x-6 md:items-center md:justify-end`}
         >
-          {["home", "about", "experience", "skills", "projects", "contact"].map(
+          {["home", "about", "experience", "skills", "projects", "publications", "education", "contact"].map(
             (section) => (
               <button
                 key={section}

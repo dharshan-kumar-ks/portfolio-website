@@ -51,10 +51,6 @@ function ContactSection({ sendEmail }) {
         </div>
         <div className="flex flex-col justify-center items-center text-left space-y-4">
           <div className="flex items-center">
-            <span className="text-green-400 mr-4 text-2xl">📞</span>
-            <p>(+91) 9999999999</p>
-          </div>
-          <div className="flex items-center">
             <span className="text-green-400 mr-4 text-2xl">📧</span>
             <p>dharshankumar55@gmail.com</p>
           </div>

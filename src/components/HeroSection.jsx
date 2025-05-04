@@ -1,7 +1,7 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { SiLeetcode } from "react-icons/si";
 import { SiScaleracademy } from "../data/SiScaleracademy";
+import { SiCredly } from "../data/SiCredly";
 
 function HeroSection() {
   return (
@@ -24,7 +24,7 @@ function HeroSection() {
         </p>
         <div className="flex space-x-6">
           <a
-            href="https://dk-sde-resume.tiiny.site/"
+            href="https://dharshan-kumar-resume.tiiny.site"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-green-400 text-black px-6 py-3 rounded-full flex items-center hover:bg-green-500 transition-colors"
@@ -40,7 +40,7 @@ function HeroSection() {
             <FaGithub />
           </a>
           <a
-            href="https://www.linkedin.com/in/dharshan-kumar-ba09521a0/" 
+            href="https://www.linkedin.com/in/dharshan-kumar-k-s/" 
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-green-400 text-3xl transition-colors flex items-center"
@@ -55,6 +55,14 @@ function HeroSection() {
           >
             {/*<SiLeetcode />*/}
             <SiScaleracademy size={36}/> 
+          </a>
+          <a
+            href="https://www.credly.com/users/dharshan-kumar-k-s"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-green-400 text-3xl transition-colors flex items-center"
+          >
+            <SiCredly size={40}/> 
           </a>
         </div>
       </div>

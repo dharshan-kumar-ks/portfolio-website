@@ -8,7 +8,7 @@ function ExperienceSection({ expandedExperience, toggleExperience }) {
         <div>
           <h2 className="text-4xl font-bold mb-6">My experience</h2>
           <p className="text-gray-400 mb-6">
-            Over 2 years of experience in backend and frontend development.
+            Over 2 years of experience in backend development.
           </p>
         </div>
         <div className="flex flex-col gap-6">
@@ -20,7 +20,15 @@ function ExperienceSection({ expandedExperience, toggleExperience }) {
               {expandedExperience === experience.id && (
                 <ul className="list-disc list-inside text-gray-400 mt-4">
                   {experience.details.map((detail, index) => (
-                    <li key={index}>{detail}</li>
+                    Array.isArray(detail) ? (
+                        <ul className="list-disc list-inside ml-6">
+                          {detail.map((subDetail, subIndex) => (
+                            <li key={subIndex}>{subDetail}</li>
+                          ))}
+                        </ul>
+                    ) : (
+                      <li key={index}>{detail}</li>
+                    )
                   ))}
                 </ul>
               )}

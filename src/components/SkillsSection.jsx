@@ -18,30 +18,30 @@ import {
   SiMongodb,
   SiMicrogenetics,
   SiPostman,
+  SiMysql,
 } from "react-icons/si";
+import { TbPlugConnected, TbApi } from "react-icons/tb";
+import { GiArtificialIntelligence } from "react-icons/gi";
+import { GrMysql } from "react-icons/gr";
 
 function SkillsSection() {
   const skills = [
     { icon: FaJava, text: "Java" },
     { icon: SiPython, text: "Python" },
-    { icon: SiCplusplus, text: "C++" },
-    { icon: SiC, text: "C" },
     { icon: SiJavascript, text: "JavaScript" },
     { icon: SiHtml5, text: "HTML" },
     { icon: SiCss3, text: "CSS" },
-    { icon: SiTypescript, text: "TypeScript" },
     { icon: SiSpringboot, text: "Spring Boot" },
-    { icon: SiExpress, text: "Express.js" },
     { icon: FaReact, text: "React" },
-    { icon: FaNodeJs, text: "Node.js" },
     { icon: SiGit, text: "Git" },
     { icon: SiLinux, text: "Linux" },
-    { icon: SiAmazonwebservices, text: "AWS" },
     { icon: SiGooglecloud, text: "GCP" },
-    { icon: SiPostgresql, text: "SQL" },
-    { icon: SiMongodb, text: "MongoDB" },
+    { icon: GrMysql, text: "SQL" },
     { icon: SiMicrogenetics, text: "Microservices" },
     { icon: SiPostman, text: "Postman" },
+    { icon: TbPlugConnected, text: "Websockets" },
+    { icon: TbApi, text: "REST API" },
+    { icon: GiArtificialIntelligence , text: "AI/ML" },
   ];
 
   return (

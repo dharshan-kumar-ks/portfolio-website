@@ -24,8 +24,8 @@ function AboutSection() {
             <p className="text-xl font-bold">Dharshan Kumar</p>
           </div>
           <div>
-            <p className="text-gray-400">Phone</p>
-            <p className="text-xl font-bold">(+91) 9999999999</p>
+            <p className="text-gray-400">Education</p>
+            <p className="text-xl font-bold">BTech, CSE</p>
           </div>
           <div>
             <p className="text-gray-400">Experience</p>
