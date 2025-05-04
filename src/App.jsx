@@ -67,15 +67,34 @@ function App() {
     setExpandedEducation(expandedEducation === id ? null : id);
   };
 
+  // EmailJS configuration - to send an email to yourself and an ack auto-reply email to the user
   const sendEmail = (e) => {
     e.preventDefault();
+
+    // Send the original email to yourself
     emailjs
       .sendForm(
-        "service_636485z", // Replace with your EmailJS service ID
-        "template_joc4bsl", // Replace with your EmailJS template ID
+        "service_osei1oq", // Replace with your EmailJS service ID
+        "template_3nvlqzs", // Replace with your EmailJS template ID
         e.target,
-        "eivh9luuND-RJlL8F" // Replace with your EmailJS user ID
+        "VQMYEcUQriwV2dxEe" // Replace with your EmailJS user ID
       )
+      .then(() => {
+        // Send the auto-reply to the user
+        return emailjs.send(
+          "service_osei1oq", // Same service ID
+          "template_wpnf4we", // Your auto-reply template ID
+          {
+            //user_name: e.target.user_name.value,
+            //user_email: e.target.user_email.value,
+            //message: e.target.message.value
+            user_name: "Test User",
+            email: "dharshankumar5555@gmail.com",  // Use a real email you control
+            message: "This is a test message"
+          },
+          "VQMYEcUQriwV2dxEe" // Same user ID
+        );
+      })
       .then(
         (result) => {
           alert("Message sent successfully!");
